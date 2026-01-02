@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- SIDEBAR -->
+<aside class="sidebar">
+  <h2>Delizia Admin</h2>
+  <ul>
+    <li class="active">Dashboard</li>
+  </ul>
+</aside>
+
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <header class="topbar">
+      <h1>Reservations Dashboard</h1>
+      <button id="logoutBtn">Logout</button>
+
+      <span>Welcome, Admin</span>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="card">
+        <h3>Total Reservations</h3>
+        <p id="totalCount">0</p>
+      </div>
+      <div class="card">
+        <h3>Pending</h3>
+        <p id="pendingCount">0</p>
+      </div>
+      <div class="card">
+        <h3>Confirmed</h3>
+        <p id="confirmedCount">0</p>
+      </div>
+    </section>
+
+    <!-- RESERVATIONS TABLE -->
+    <section class="table-section">
+      <h2>Recent Reservations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </section>
+  </main>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
