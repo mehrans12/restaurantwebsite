@@ -1,0 +1,110 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #8b0000, #ff4c4c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Login Heading */
+.login-container h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Form */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+.login-container input {
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.login-container input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.login-container input:focus {
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+/* Button */
+.login-container button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #8b0000;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+    background: #8b0000;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Message */
+#loginMsg {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media(max-width:480px){
+    .login-container {
+        padding: 35px 25px;
+    }
+    .login-container h2 {
+        font-size: 24px;
+    }
+}
